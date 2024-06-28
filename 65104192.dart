@@ -2,7 +2,7 @@ class Person{
   String _name;
   
   String get name => _name;
-  set name(String value) => _name = value;
+  set name(String value) => _name = name;
   
   Person(this._name);
 }
@@ -12,9 +12,9 @@ class Engine{
   int _speed;
   
   String get model => _model;
-  set model(String value) => _model = value;
+  set model(String value) => _model = model;
   int get speed => _speed;
-  set speed(int value) => _speed = value;
+  set speed(int value) => _speed = speed;
   
   void displayEngineInfo(
     print('Engine : ${Engine.model} Speed : ${Engine.speed} km/h');
@@ -31,13 +31,13 @@ class Car{
   Engine _engine;
   
   String get brand => _brand;
-  set brand(String value) => _brand = value;
+  set brand(String value) => _brand = brand;
   String get model => _model;
-  set model(String value) => _model = value;
+  set model(String value) => _model = model;
   Person get owner => _owner;
-  set owner(Person value) => _owner = value;
+  set owner(Person value) => _owner = owner;
   Engine get engine => _engine;
-  set engine(Engine value) => _engine = value;
+  set engine(Engine value) => _engine = engine;
   
   Car(this._brand , this._engine , this._model , this._owner);
   
