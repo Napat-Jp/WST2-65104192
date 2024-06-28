@@ -59,7 +59,7 @@ class Honda extend Car{
   Honda( String _brand , String _model , Person _owner ,Engine _engine , this._color) : super(brand , model , owner , engine );
   
   String get color => _color;
-  set color(String value) => _color = value;
+  set color(String value) => _color = color;
   
   void displayCarInfo(
     print('Brand : $_brand');
